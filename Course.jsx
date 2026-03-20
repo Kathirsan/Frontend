@@ -2,7 +2,7 @@
 
 function Course(props){
     function BuyCourse(){
-        console.log(purchased);
+        console.log("purchased");
     }
 
    
@@ -12,7 +12,7 @@ function Course(props){
             <img src={props.image} alt="" />
             <h3>{props.name}</h3>
             <p>{props.price}</p>
-            <button onClick={B}>Buy Now</button>
+            <button onClick={BuyCourse}>Buy Now</button>
         </div>
     );
 
