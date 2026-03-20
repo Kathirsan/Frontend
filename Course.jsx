@@ -2,7 +2,7 @@
 
 function Course(props){
     function BuyCourse(discount){
-        console.log("purchased");
+        console.log("purchased with",discount,"%discount");
     }
 
    
