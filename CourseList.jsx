@@ -36,11 +36,12 @@ function CourseList(){
 
     function handleDelete(id){
         const newCourse = courses.filter((course)=> course.id !=id)
+        setCourses(newCourse)
     }
 
     courses.sort((x,y) => y.price - x.price)
 
-    const vfmCourses = courses.filter((course)=> course.price<200)
+    //const vfmCourses = courses.filter((course)=> course.price<200)
 
     const coursesList=vfmCourses.map(
         (course,index) =>
