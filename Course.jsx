@@ -1,10 +1,10 @@
-
+//import PropTypes from 'prop-types'
 
 function Course(props){
 
    
     return(
-        < div className ="card">
+       props.name && < div className ="card">
         
             <img src={props.image} alt="" />
             <h3>{props.name}</h3>

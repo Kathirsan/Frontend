@@ -9,30 +9,33 @@ function CourseList(){
     const courses =[{
         id:1,
          name:"HTML Full Course" ,
-         price:"$199",
+         price:199,
          image:html,
           rating:0
 },
     {id:2,
         name :"CSS",
-        price :"$199",
+        price :199,
         image:css,
         rating : 5
     },
     {id:3,
         name :"JavaScript",
-        price:"$499",
+        price:499,
         image :js,
         rating :4
 
     },
     {id:4,
         name :"React",
-        price:"$99",
+        price:99,
         image :js,
         rating :5
     }
     ]
+
+    courses.sort((x,y) => y.price - x.price)
+
     const coursesList=courses.map(
         (course,index) =>
             <Course key={index} name={course.name}
