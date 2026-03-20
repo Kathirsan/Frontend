@@ -34,7 +34,9 @@ function CourseList(){
     }
     ])
 
-    function handleDelete(id){}
+    function handleDelete(id){
+        const newCourse = courses.filter((course)=> course.id !=id)
+    }
 
     courses.sort((x,y) => y.price - x.price)
 
