@@ -4,12 +4,12 @@ import { useState } from "react";
 
 function Course(props){
     //let purchased = false;
-    const [purchased,setPurchased] = useState(false);
+    const [purchased,setPurchased] = useState('false');
 
 
-    function BuyCourse(discount,e){
+    function BuyCourse(discount){
         console.log(props.name,"purchased with",discount,"%discount");
-        setPurchased(true);
+        setPurchased('true');
         console.log(purchased);
     }
 
@@ -21,7 +21,7 @@ function Course(props){
             <h3>{props.name}</h3>
             <p>{props.price}</p>
             <button onClick={(event)=> BuyCourse[20]}>Buy Now</button>
-            <p>{purchased ? "Already Purchased":"Get it now"}</p>
+            <p>{purchased }</p>
         </div>
     );
 
