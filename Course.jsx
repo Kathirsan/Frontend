@@ -12,7 +12,7 @@ function Course(props){
             <img src={props.image} alt="" />
             <h3>{props.name}</h3>
             <p>{props.price}</p>
-            <button>Buy Now</button>
+            <button onClick={B}>Buy Now</button>
         </div>
     );
 
