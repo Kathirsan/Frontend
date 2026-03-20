@@ -1,6 +1,7 @@
 //import PropTypes from 'prop-types'
 
 function Course(props){
+    function BuyCourse(){}
 
    
     return(
@@ -9,7 +10,7 @@ function Course(props){
             <img src={props.image} alt="" />
             <h3>{props.name}</h3>
             <p>{props.price}</p>
-            <span>{props.rating}</span>
+            <button>Buy Now</button>
         </div>
     );
 
