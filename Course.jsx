@@ -8,9 +8,9 @@ function Course(props){
 
 
     function BuyCourse(discount,e){
-        console.log("purchased with",discount,"%discount");
-        purchased = true;
-        console.log(e);
+        console.log(props.name,"purchased with",discount,"%discount");
+        setPurchased(true);
+        console.log(purchased);
     }
 
    
