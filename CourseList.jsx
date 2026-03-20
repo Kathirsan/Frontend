@@ -34,6 +34,8 @@ function CourseList(){
     }
     ])
 
+    function handleDelete(id){}
+
     courses.sort((x,y) => y.price - x.price)
 
     const vfmCourses = courses.filter((course)=> course.price<200)
