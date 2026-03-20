@@ -1,7 +1,12 @@
 //import PropTypes from 'prop-types'
 
+import { useState } from "react";
+
 function Course(props){
-    let purchased = false;
+    //let purchased = false;
+    const [purchased,]useState
+
+
     function BuyCourse(discount,e){
         console.log("purchased with",discount,"%discount");
         purchased = true;
