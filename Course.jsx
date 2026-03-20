@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function Course(props){
     //let purchased = false;
-    const [purchased,]useState
+    const [purchased,setPurchased] = useState(false);
 
 
     function BuyCourse(discount,e){
