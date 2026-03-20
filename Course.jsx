@@ -2,7 +2,7 @@
 
 function Course(props){
     function BuyCourse(){
-        console.
+        console.log(purchased);
     }
 
    
