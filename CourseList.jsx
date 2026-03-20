@@ -43,11 +43,11 @@ function CourseList(){
 
     //const vfmCourses = courses.filter((course)=> course.price<200)
 
-    const coursesList=vfmCourses.map(
+    const coursesList=courses.map(
         (course,index) =>
             <Course key={index} name={course.name}
         image={course.image}
-        price={course.price} rating={course.rating}/>)
+        price={course.price} rating={course.rating} delete={handleDelete}/>)
 
     
     return(
