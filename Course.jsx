@@ -1,7 +1,9 @@
 //import PropTypes from 'prop-types'
 
 function Course(props){
-    function BuyCourse(){}
+    function BuyCourse(){
+        console.
+    }
 
    
     return(
