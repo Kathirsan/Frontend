@@ -36,6 +36,8 @@ function CourseList(){
 
     courses.sort((x,y) => y.price - x.price)
 
+    const vfmCourse = cou
+
     const coursesList=courses.map(
         (course,index) =>
             <Course key={index} name={course.name}
