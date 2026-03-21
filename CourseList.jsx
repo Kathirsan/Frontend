@@ -33,9 +33,12 @@ function CourseList(){
         rating :5
     }
     ]);
+     
+         const [dummy, setDummy]=useState
 
    useEffect(()=>{
-      console.log("use effect called")
+      console.log("use effect called");
+      console.log(dummy);
    });
 
     function handleDelete(id){
@@ -58,6 +61,7 @@ function CourseList(){
       
     <>
     {coursesList}
+    <button onClick={()=>{setDummy(false)}}>Dummy Button</button>
       </>
     );
 }
