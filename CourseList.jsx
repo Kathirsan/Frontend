@@ -6,7 +6,7 @@ import js from './assets/JS.jpg'
 
 
 function CourseList(){
-    const [courses,SetCourses] = useState([{
+    const [courses,setCourses] = useState([{
         id:1,
          name:"HTML Full Course" ,
          price:199,
@@ -32,7 +32,7 @@ function CourseList(){
         image :js,
         rating :5
     }
-    ])
+    ]);
 
     function handleDelete(id){
         const newCourse = courses.filter((course)=> course.id !=id)
