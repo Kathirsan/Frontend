@@ -2,7 +2,7 @@ import Course from './Course';
 import html from './assets/HTML.jpg'
 import css from './assets/CSS.jpg'
 import js from './assets/JS.jpg'
-
+import { useState } from 'react';
 
 
 function CourseList(){
@@ -35,8 +35,8 @@ function CourseList(){
     ]);
 
     function handleDelete(id){
-        const newCourse = courses.filter((course)=> course.id !=id)
-        setCourses(newCourse)
+        const newCourses = courses.filter((course)=> course.id != id)
+        setCourses(newCourses);
     }
 
     courses.sort((x,y) => y.price - x.price)
