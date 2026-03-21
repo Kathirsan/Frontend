@@ -34,12 +34,14 @@ function CourseList(){
     }
     ]);
      
-         const [dummy, setDummy]=useState
+         const [dummy, setDummy]=useState(true);
 
    useEffect(()=>{
       console.log("use effect called");
       console.log(dummy);
-   });
+      fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(Response => {console.log(Response)})
+   },[]);
 
     function handleDelete(id){
         const newCourses = courses.filter((course)=> course.id != id)
