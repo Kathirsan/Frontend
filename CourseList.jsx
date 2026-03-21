@@ -2,7 +2,7 @@ import Course from './Course';
 import html from './assets/HTML.jpg'
 import css from './assets/CSS.jpg'
 import js from './assets/JS.jpg'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 function CourseList(){
@@ -33,6 +33,10 @@ function CourseList(){
         rating :5
     }
     ]);
+
+   useEffect(()=>{
+      console.log("use effect called")
+   });
 
     function handleDelete(id){
         const newCourses = courses.filter((course)=> course.id != id)
