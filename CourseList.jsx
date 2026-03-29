@@ -6,41 +6,23 @@ import { useEffect, useState } from 'react';
 
 
 function CourseList(){
-    const [courses,setCourses] = useState([{
-        id:1,
-         name:"HTML Full Course" ,
-         price:199,
-         image:html,
-          rating:0
-},
-    {id:2,
-        name :"CSS",
-        price :199,
-        image:css,
-        rating : 5
-    },
-    {id:3,
-        name :"JavaScript",
-        price:499,
-        image :js,
-        rating :4
-
-    },
-    {id:4,
-        name :"React",
-        price:99,
-        image :js,
-        rating :5
-    }
-    ]);
+    const [courses,setCourses] = useState(null);
      
          const [dummy, setDummy]=useState(true);
+         const[error,setError]=useState(null);
 
    useEffect(()=>{
       console.log("use effect called");
       console.log(dummy);
       fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(Response => {console.log(Response)})
+      .then(Response => {
+        console.log(Response);
+        return Response.json()
+      }).then(data => setCourses(data))
+      .catch((eror)=>{
+        setError(error.message);
+
+      })
    },[]);
 
     function handleDelete(id){
