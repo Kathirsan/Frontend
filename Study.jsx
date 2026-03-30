@@ -1,8 +1,11 @@
 import React from 'react'
 
 const Study = () => {
+    const courses =["React","JavaScript","css","node","typescript"]
   return (
-    <div>Study</div>
+    <div>
+          {courses}
+    </div>
   )
 }
 
