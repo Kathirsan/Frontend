@@ -4,6 +4,7 @@ import CourseList from './CourseList';
 
 import React from 'react'
 import Study from './Study';
+import ProductCard from './ProductCard';
 
 function App() {
 
