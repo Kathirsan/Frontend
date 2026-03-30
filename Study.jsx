@@ -6,7 +6,7 @@ const Study = () => {
     <div>
           <ul>
     
-               {courses.map()}
+               {courses.map((course))}
           </ul>
     </div>
   )
