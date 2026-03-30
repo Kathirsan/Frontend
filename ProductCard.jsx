@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ProductCard = () => {
+const ProductCard = (props) => {
   return (
     <div>
-        <h2>Demo Content</h2>
-        <p>This is deme data</p>
+        <h2>{props.title}</h2>
+        <p>price :Rs {props.price}</p>
     </div>
   )
 }

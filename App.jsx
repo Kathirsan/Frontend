@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-   <ProductCard/>
+   <ProductCard title="laptop" price={50000}/>
    </>
   );
 }
