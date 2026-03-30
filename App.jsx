@@ -5,13 +5,14 @@ import CourseList from './CourseList';
 import React from 'react'
 import Study from './Study';
 import ProductCard from './ProductCard';
+import { useState } from 'react';
 
 function App() {
 
+const [count,setCount] = useState(0);
   return (
     <>
-   <ProductCard title="laptop" price={50000}/>
-  < ProductCard title="phone" price={10000}/>
+   <h1>{count}</h1>
    </>
   );
 }
