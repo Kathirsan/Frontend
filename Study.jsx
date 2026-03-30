@@ -4,7 +4,9 @@ const Study = () => {
     const courses =["React","JavaScript","css","node","typescript"]
   return (
     <div>
-          {courses}
+          <ul>
+            
+          </ul>
     </div>
   )
 }
