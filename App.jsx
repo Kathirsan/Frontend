@@ -17,6 +17,7 @@ const ProductCard = () =>{
   return(
     <div>
       <h2></h2>
+      <p></p>
     </div>
   )
 }
