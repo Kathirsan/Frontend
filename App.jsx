@@ -17,7 +17,7 @@ const ProductCard = () =>{
   return(
     <div>
       <h2>Demo Content</h2>
-      <p></p>
+      <p>This is demo data</p>
     </div>
   )
 }
