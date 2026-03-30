@@ -5,7 +5,8 @@ const Study = () => {
   return (
     <div>
           <ul>
-            
+    
+               {courses}
           </ul>
     </div>
   )
