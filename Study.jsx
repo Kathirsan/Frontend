@@ -7,7 +7,7 @@ const Study = () => {
           <ul>
     
                {courses.map((course,index)=>(
-                <li>
+                <li key={index}>
                     {index+1}.{course}
                 </li>
                ))}
