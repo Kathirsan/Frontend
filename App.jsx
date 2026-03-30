@@ -11,7 +11,7 @@ function App() {
   return (
     <>
    <ProductCard title="laptop" price={50000}/>
-  < ProductCard title="laptop" price={50000}/>
+  < ProductCard title="phone" price={10000}/>
    </>
   );
 }
