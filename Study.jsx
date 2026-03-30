@@ -7,7 +7,9 @@ const Study = () => {
           <ul>
     
                {courses.map((course,index)=>(
-                
+                <li>
+                    
+                </li>
                ))}
           </ul>
     </div>
