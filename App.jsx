@@ -13,13 +13,7 @@ function App() {
    </>
   );
 }
-const ProductCard = () =>{
-  return(
-    <div>
-      <h2>Demo Content</h2>
-      <p>This is demo data</p>
-    </div>
-  )
-}
+
+
 
 export default App
