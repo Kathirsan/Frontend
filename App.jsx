@@ -37,7 +37,8 @@ import { useState,useEffect } from 'react';
 const App = () =>{
   const [count,setCount] = useState(0);
   useEffect(()=>{
-    console.log("Component",count);
+    console.log("Component Mounted");
+    
   },[count])
   return(
     <div>
