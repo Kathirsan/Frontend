@@ -26,7 +26,7 @@ function App() {
 
         <input type="text" placeholder="Enter username" value={username} onChange={(e) => setUserName(e.target.value)} />
         <input type="password" placeholder="Enter password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      <button type='submit'>Submit</button>
+      <button type="submit" disabled={!username || !password}>Submit</button>
       </form>
 
 
