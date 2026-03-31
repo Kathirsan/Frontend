@@ -5,9 +5,9 @@ import CourseList from './CourseList';
 import React from 'react'
 import Study from './Study';
 import ProductCard from './ProductCard';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
-function App() {
+/*function App() {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
@@ -32,6 +32,10 @@ function App() {
 
     </div>
   )
+}*/
+
+const App = () =>{
+  return()
 }
 
 
