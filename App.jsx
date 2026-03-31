@@ -39,7 +39,7 @@ const App = () =>{
   useEffect(()=>{
     console.log("Component Mounted");
     return()=>{
-      console.log("Component Unmounted");
+      console.log("Cleanup before next run");
     }
   },[count])
   return(
