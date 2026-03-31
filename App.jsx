@@ -39,6 +39,8 @@ const App = () =>{
   useEffect(()=>{
     console.log("Component Mounted");
     return()=>{
+      console.log("Component Unmounted");
+    }
   },[count])
   return(
     <div>
