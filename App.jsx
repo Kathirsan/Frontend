@@ -20,10 +20,13 @@ function App() {
           e.preventDefault();
           console.log("Username:", username);
           console.log("Password:", password);
+          setUserName("");
+          setPassword("");
         }}>
 
         <input type="text" placeholder="Enter username" value={username} onChange={(e) => setUserName(e.target.value)} />
         <input type="password" placeholder="Enter password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <button type=''>Submit</button>
       </form>
 
 
