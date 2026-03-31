@@ -15,6 +15,7 @@ const [password,setPassword]=useState("");
     <div>
       <h1>Hello{username}</h1>
       <p>Your password is {password}</p>
+      <input type="text" placeholder="Enter username" value={username} onChange={(e)=>}
     </div>
   )
 }
