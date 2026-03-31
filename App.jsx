@@ -36,6 +36,9 @@ import { useState,useEffect } from 'react';
 
 const App = () =>{
   const [count,setCount] = useState(0);
+  useEffect(()=>{
+    console.log("count has been updated",count);
+  },[count])
   return(
     <div>
       <h1>my app</h1>
