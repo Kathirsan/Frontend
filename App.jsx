@@ -8,15 +8,12 @@ import ProductCard from './ProductCard';
 import { useState } from 'react';
 
 function App() {
+ const [username,setUserName]=useState("");
+const [password,setPassword]=useState("");
 
-const [count,setCount] = useState(3);
-  return (
-    <>
-   <h1>{count}</h1>
-   <button onClick={()=>setCount(previous => previous + 1)}>Increase</button>
-   <button onClick={()=>{if(count>0){setCount(previous => previous - 1)}}}>Decrease</button>
-   </>
-  );
+  return(
+    <div></div>
+  )
 }
 
 
