@@ -13,8 +13,8 @@ const [password,setPassword]=useState("");
 
   return(
     <div>
-      <h1>Hello</h1>
-      <p></p>
+      <h1>Hello{username}</h1>
+      <p>Your password is {password}</p>
     </div>
   )
 }
