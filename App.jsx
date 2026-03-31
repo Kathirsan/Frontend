@@ -9,12 +9,12 @@ import { useState } from 'react';
 
 function App() {
 
-const [count,setCount] = useState(0);
+const [count,setCount] = useState(3);
   return (
     <>
    <h1>{count}</h1>
-   <button onClick={()=>setCount(count+1)}>Increase</button>
-   <button onClick={()=>{if(count>0){setCount(count-1)}}}>Decrease</button>
+   <button onClick={()=>setCount(previous => previous + 1)}>Increase</button>
+   <button onClick={()=>{if(count>0){setCount(previous => previous - 1)}}}>Decrease</button>
    </>
   );
 }
