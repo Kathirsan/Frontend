@@ -43,9 +43,7 @@ const App = () =>{
     }
   },[count])
   return(
-    <div>
-      <h1>my app</h1>
-    </div>
+    <button onClick={()=>setCount(count+1)}>Change</button>
   )
 }
 
