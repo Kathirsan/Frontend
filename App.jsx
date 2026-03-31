@@ -12,7 +12,10 @@ function App() {
 const [password,setPassword]=useState("");
 
   return(
-    <div></div>
+    <div>
+      <h1>Hello</h1>
+      <p></p>
+    </div>
   )
 }
 
