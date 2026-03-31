@@ -38,7 +38,7 @@ const App = () =>{
   const [count,setCount] = useState(0);
   useEffect(()=>{
     console.log("Component Mounted");
-    
+    return()=>{
   },[count])
   return(
     <div>
