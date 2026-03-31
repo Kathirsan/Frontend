@@ -35,7 +35,11 @@ import { useState,useEffect } from 'react';
 }*/
 
 const App = () =>{
-  return()
+  return(
+    <div>
+      <h1>my app</h1>
+    </div>
+  )
 }
 
 
