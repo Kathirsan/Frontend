@@ -35,7 +35,7 @@ import { useState,useEffect } from 'react';
 }*/
 
 const App = () =>{
-  const [count,setCount] =
+  const [count,setCount] = useState(0);
   return(
     <div>
       <h1>my app</h1>
