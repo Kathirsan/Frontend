@@ -7,7 +7,7 @@ import Study from './Study';
 import ProductCard from './ProductCard';
 import { useState,useEffect } from 'react';
 
-/*function App() {
+function App() {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
@@ -32,7 +32,7 @@ import { useState,useEffect } from 'react';
 
     </div>
   )
-}*/
+}
 
 const App = () =>{
   const [count,setCount] = useState(0);
